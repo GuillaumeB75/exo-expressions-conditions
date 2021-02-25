@@ -1,16 +1,16 @@
-let text =                                                        //en cours
-  "Je suis le ténébreux, - le veuf, - l'inconsolé,\n\      
+let text =
+  "Je suis le ténébreux, - le veuf, - l'inconsolé,\n\
 Le prince d'Aquitaine à la tour abolie :\n\
 Ma seule étoile est morte, - et mon luth constellé\n\
 Porte le soleil noir de la Mélancolie.\n\
 \n\
-Dans la nuit du tombeau, toi qui m'as consolé, \n\
-Rends - moi le Pausilippe et la mer d'Italie,\n\
+Dans la nuit du tombeau, toi qui m'as consolé,\n\
+Rends-moi le Pausilippe et la mer d'Italie,\n\
 La fleur qui plaisait tant à mon cœur désolé,\n\
 Et la treille où le pampre à la rose s'allie.\n\
 \n\
-Suis - je Amour ou Phébus ? ...Lusignan ou Biron ?\n\
-Mon front est rouge encor du baiser de la reine; \n\
+Suis-je Amour ou Phébus ? ... Lusignan ou Biron ?\n\
+Mon front est rouge encor du baiser de la reine ;\n\
 J'ai rêvé dans la grotte où nage la sirène...\n\
 \n\
 Et j'ai deux fois vainqueur traversé l'Achéron ;\n\
@@ -28,23 +28,33 @@ let nbU = 0
 let nbY = 0
 
 for (let i = 0; i < text.length; ++i) {
-  if (
-    text[i] === 'e' ||
-    text[i] === 'é' ||
-    text[i] === 'è' ||
-    text[i] === 'ê'
-  ) {
-    ++nbE
-  } else if (text[i] === 'a') {
-    ++nbA
-  } else if (text[i] === 'i') {
-    ++nbI
-  } else if (text[i] === 'o') {
-    ++nbO
-  } else if (text[i] === 'u') {
-    ++nbU
-  } else if (text[i] === 'y') {
-    ++nbY
+  switch (text[i]) {
+    case [i] 'e' :
+    case [i] 'é' :
+    case [i] 'è' :
+    case [i] 'ê' :
+
+      ++nbE
+      break
+    case === 'a':    // voir résolution à la correction?
+      break
+
+      ++nbA
+    case === 'i':
+      break
+
+      ++nbI
+    case === 'o':
+      break
+
+      ++nbO
+    case === 'u':
+      break
+      ++nbU
+
+    case === 'y':
+      ++nbY
+      break
   }
 }
 

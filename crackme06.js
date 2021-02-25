@@ -1,4 +1,5 @@
-/*let password = '1a2b!AZEAZEAZEAZEAZEAZEAZ'                            // fait RESULTAT PLUS BAS
+/*let password = '1a2b!AZEAZEAZEAZEAZEAZEAZ'                            // fait 
+RESULTAT PLUS BAS
 const crackme6 = (password) => {
   if (password[0] === '1') {
     if (password[1] === 'a') {
