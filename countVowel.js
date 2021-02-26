@@ -29,30 +29,25 @@ let nbY = 0
 
 for (let i = 0; i < text.length; ++i) {
   switch (text[i]) {
-    case [i] 'e' :
-    case [i] 'é' :
-    case [i] 'è' :
-    case [i] 'ê' :
-
+    case 'e':
+    case 'é':
+    case 'è':
+    case 'ê':
       ++nbE
       break
-    case === 'a':    // voir résolution à la correction?
+    case 'a':
+      ++nbA    // voir résolution à la correction?
       break
-
-      ++nbA
-    case === 'i':
-      break
-
+    case 'i':
       ++nbI
-    case === 'o':
       break
-
+    case 'o':
       ++nbO
-    case === 'u':
       break
+    case 'u':
       ++nbU
-
-    case === 'y':
+      break
+    case 'y':
       ++nbY
       break
   }
