@@ -1,6 +1,4 @@
-var firstName = 'Bob'
-var gender = 'male'
-let msg = `Bonjour ${firstName} vous êtes entré ${gender === 'female' ? 'e' : ''} sur le chan`
-console.log(msg)
+let firstname = "Bob"
+let gender = "male"
 
-// pour la variable gender,firstname 
+console.log(`Bonjour ${firstname}, Vous etes entré${gender === "female" ? "e" : ""} sur le chan`)

@@ -18,7 +18,6 @@ Modulant tour à tour sur la lyre d'Orphée\n\
 Les soupirs de la sainte et les cris de la fée."
 
 text = text.toLowerCase()
-console.log(text)
 
 let nbA = 0
 let nbE = 0
@@ -27,16 +26,19 @@ let nbO = 0
 let nbU = 0
 let nbY = 0
 
+
+
+
+
+
 for (let i = 0; i < text.length; ++i) {
   switch (text[i]) {
-    case 'e':
-    case 'é':
-    case 'è':
-    case 'ê':
-      ++nbE
+    case `a`:
+      ++nbA
       break
-    case 'a':
-      ++nbA    // voir résolution à la correction?
+    case `é`:
+    case `e`:
+      ++nbE
       break
     case 'i':
       ++nbI
@@ -49,10 +51,11 @@ for (let i = 0; i < text.length; ++i) {
       break
     case 'y':
       ++nbY
-      break
   }
-}
 
+
+
+}
 console.log(`nb E: ${nbE}`)
 console.log(`nb A: ${nbA}`)
 console.log(`nb I: ${nbI}`)

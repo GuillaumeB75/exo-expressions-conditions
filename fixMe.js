@@ -1,20 +1,20 @@
-//fait
-let list = ['Alice', 'Bob', 'Charlie', 'Craig', 'Eva']
-for (let i = 0; i <= list.length; ++i) {
+let list = ['Alice', 'Bob', 'Charlie', 'Craig', 'Eve']
+for (let i = 0; i < list.length; ++i) {
+  list[i] = list[i].toLowerCase()
   switch (list[i]) {
-    case 'Alice':
+    case 'alice':
       console.log('Alice want to exchange with Bob')
       break
-    case 'Bob':
+    case 'bob':
       console.log('Bob want to exchange with Alice')
       break
-    case 'Charlie':
+    case 'charlie':
       console.log('Charlie is a generic third participant')
       break
-    case 'Craig':
+    case 'craig':
       console.log('Craig is a password cracker')
       break
-    case 'Eva':
+    case 'eve':
       console.log('Eve is an eavesdropper')
       break
   }
